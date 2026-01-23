@@ -51,7 +51,7 @@ export const defaultConfig: Config = {
   client_id: '',
   client_secret: '',
   check_interval_seconds: 60,
-  alarm_sound_path: 'sounds/default.mp3',
+  alarm_sound_path: 'default/default.mp3',
   alarm_duration_minutes: 5,
   alarm_all_streamers: true,
   channels: [],

@@ -93,7 +93,7 @@ fn default_check_interval() -> u32 {
 }
 
 fn default_alarm_sound_path() -> String {
-    "sounds/default.mp3".to_string()
+    "default/default.mp3".to_string()
 }
 
 fn default_alarm_duration() -> u32 {

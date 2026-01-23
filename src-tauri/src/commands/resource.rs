@@ -13,21 +13,7 @@ pub struct AvailableResource {
     pub display_name: String,
 }
 
-/// リソースディレクトリのパスを取得
-fn get_resource_dir(dir_name: &str) -> PathBuf {
-    let exe_dir = std::env::current_exe()
-        .ok()
-        .and_then(|p| p.parent().map(|p| p.to_path_buf()))
-        .unwrap_or_else(|| PathBuf::from("."));
-    
-    // 開発時はソースツリーのディレクトリ、本番時は実行ファイルと同階層
-    let dev_path = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join(dir_name);
-    if dev_path.exists() {
-        dev_path
-    } else {
-        exe_dir.join(dir_name)
-    }
-}
+use crate::utils::get_resource_dir;
 
 /// 利用可能な言語の一覧を取得
 #[tauri::command]

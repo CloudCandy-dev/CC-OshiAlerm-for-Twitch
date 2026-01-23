@@ -13,9 +13,10 @@ impl ActionExecutor {
                     // フロントエンドにアラーム開始イベントを通知
                     // 実際のアラーム音の再生パスなどは設定から取得
                     let config = CONFIG_MANAGER.get_config();
+                    let sound_path = crate::utils::resolve_sound_path(&config.alarm_sound_path);
                     let _ = app_handle.emit("alarm-started", serde_json::json!({
                         "channel": channel.name,
-                        "sound_path": config.alarm_sound_path
+                        "sound_path": sound_path
                     }));
                 }
                 Action::OpenBrowser { url } => {

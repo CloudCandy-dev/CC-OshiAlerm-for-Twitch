@@ -9,7 +9,7 @@ pub fn t(key: &str) -> String {
     let config = CONFIG_MANAGER.get_config();
     let lang_code = config.language;
     
-    let lang_dir = get_lang_dir();
+    let lang_dir = crate::utils::get_resource_dir("languages");
     let lang_path = lang_dir.join(format!("{}.json5", lang_code));
     
     if let Ok(content) = fs::read_to_string(lang_path) {
@@ -23,19 +23,6 @@ pub fn t(key: &str) -> String {
     key.to_string()
 }
 
-fn get_lang_dir() -> PathBuf {
-    let exe_dir = std::env::current_exe()
-        .ok()
-        .and_then(|p| p.parent().map(|p| p.to_path_buf()))
-        .unwrap_or_else(|| PathBuf::from("."));
-    
-    let dev_path = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("languages");
-    if dev_path.exists() {
-        dev_path
-    } else {
-        exe_dir.join("languages")
-    }
-}
 
 #[cfg(test)]
 mod tests {

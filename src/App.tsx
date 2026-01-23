@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { ConfigProvider, LanguageProvider, ThemeProvider, useLanguage, useTheme } from './contexts';
 import MainWindow from './components/MainWindow/index.tsx';
 import { useAlarm } from './hooks';
@@ -8,6 +9,13 @@ function AppContent() {
 
   // アラームイベントの待受を開始
   useAlarm();
+
+  useEffect(() => {
+    // 初回起動時に即時チェックを実行
+    import('./services/tauriCommands').then(module => {
+      module.checkStreamsNow();
+    });
+  }, []);
 
   if (langLoading || themeLoading) {
     return (

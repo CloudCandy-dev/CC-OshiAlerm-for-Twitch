@@ -40,3 +40,14 @@ export async function reloadConfig(): Promise<Config> {
         return defaultConfig;
     }
 }
+
+/**
+ * 即時チェックを実行
+ */
+export async function checkStreamsNow(): Promise<void> {
+    try {
+        await invoke('check_streams_now');
+    } catch (error) {
+        console.error('Failed to trigger stream check:', error);
+    }
+}
