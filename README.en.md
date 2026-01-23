@@ -12,7 +12,7 @@ A simple and feature-rich desktop notification app that alerts you with sounds a
 
 ## How to Use
 
-1. Download the application from [here](https://github.com/CloudCandy-dev/CC-OshiAlerm-for-Twitch/releases/download/1.0.0/CC-OshiAlerm-for-Twitch.zip) and extract it.
+1. Download the application from [here](https://github.com/CloudCandy-dev/CC-OshiAlerm-for-Twitch/releases/download/1.0.2/CC-OshiAlerm-for-Twitch.zip) and extract it.
 2. Launch `cc-oshialerm-for-twitch.exe`.
 3. Go to Settings (gear icon) and add Twitch streamer names (IDs) you want to follow.
 4. If you want to customize the notification sound, select your preferred audio file.
