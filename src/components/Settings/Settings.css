@@ -1,0 +1,166 @@
+/**
+ * 設定画面のスタイル
+ */
+
+.settings-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.settings-modal {
+    width: 90%;
+    max-width: 600px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: none;
+}
+
+.settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border-light);
+    background-color: var(--color-primary-light);
+}
+
+.settings-title {
+    font-size: var(--font-size-lg);
+    margin: 0;
+    color: var(--color-primary-dark);
+}
+
+.close-button {
+    padding: var(--spacing-xs);
+    color: var(--color-text-secondary);
+    border-radius: var(--radius-sm);
+}
+
+.close-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--color-error);
+}
+
+.settings-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.settings-tabs {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-md) 0;
+    background-color: var(--color-surface-hover);
+    border-right: 1px solid var(--color-border-light);
+}
+
+.tab-item {
+    padding: var(--spacing-md) var(--spacing-lg);
+    text-align: left;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    border-left: 3px solid transparent;
+    transition: all var(--transition-fast);
+}
+
+.tab-item:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+.tab-item.active {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+    font-weight: 600;
+    border-left-color: var(--color-primary);
+}
+
+.tab-content {
+    flex: 1;
+    padding: var(--spacing-lg);
+    overflow-y: auto;
+}
+
+/* 共通設定フォームスタイル */
+.settings-group {
+    margin-bottom: var(--spacing-xl);
+}
+
+.settings-group-title {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-text);
+}
+
+.settings-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.settings-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+}
+
+.settings-hint {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    margin-top: var(--spacing-xs);
+}
+
+/* ボタン */
+.settings-button-primary {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+}
+
+.settings-button-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.settings-button-outline {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+}
+
+.settings-button-outline:hover {
+    background-color: var(--color-primary-light);
+}
+
+.animate-fade-in {
+    animation: fade-in 0.2s ease-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

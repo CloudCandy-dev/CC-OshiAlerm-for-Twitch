@@ -1,0 +1,74 @@
+{
+  "__displayName": "English",
+  // ==============================================
+  // CC-OshiAlerm for Twitch English Language File
+  // ==============================================
+
+  // App Info
+  "app_title": "CC-OshiAlerm for Twitch",
+  "app_description": "Twitch Stream Alarm",
+
+  // Main Window
+  "monitoring_streamers": "Monitoring Streamers",
+  "streaming": "Live",
+  "offline": "Offline",
+  "stop_alarm": "Stop Alarm",
+  "settings": "Settings",
+  "no_streamers": "No streamers configured",
+
+  // Settings
+  "settings_title": "Settings",
+  "general_settings": "General",
+  "language": "Language",
+  "theme": "Theme",
+  "auto_start": "Start with Windows",
+  "minimize_to_tray": "Minimize to tray on close",
+
+  // Alarm Settings
+  "alarm_settings": "Alarm",
+  "alarm_sound": "Alarm Sound",
+  "select_file": "Select",
+  "alarm_duration": "Alarm Duration (min)",
+  "alarm_mode": "Multiple Stream Mode",
+  "alarm_all": "Alert All",
+  "alarm_priority_only": "Priority Only",
+
+  // Monitoring Settings
+  "monitoring_settings": "Monitoring",
+  "check_interval": "Check Interval (sec)",
+  "check_interval_hint": "Minimum 30 seconds",
+
+  // Streamer Settings
+  "streamer_settings": "Streamers",
+  "add_streamer": "Add Streamer",
+  "show": "Show",
+  "hide": "Hide",
+  "streamer_name": "Streamer Name",
+  "priority": "Priority",
+  "delete": "Delete",
+  "actions": "Actions",
+
+  // API Settings
+  "api_settings": "Twitch API",
+  "client_id": "Client ID",
+  "client_secret": "Client Secret",
+  "api_hint": "Get from Twitch Developer Console",
+
+  // Buttons
+  "save": "Save",
+  "cancel": "Cancel",
+  "close": "Close",
+
+  // Messages
+  "loading": "Loading...",
+  "settings_saved": "Settings saved",
+  "error_save_failed": "Failed to save settings",
+  "error_api_auth": "Twitch API authentication failed. Check Client ID/Secret.",
+  "error_network": "Network error. Retrying...",
+  "alarm_started": "Alarm started",
+  "alarm_stopped": "Alarm stopped",
+
+  // Tray Menu
+  "tray_show": "Show",
+  "tray_quit": "Quit"
+}

@@ -1,0 +1,69 @@
+/**
+ * アラーム操作のスタイル
+ */
+
+.alarm-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-primary-light);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    margin-top: var(--spacing-sm);
+    animation: slide-up var(--transition-slow);
+}
+
+.alarm-status {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-primary-dark);
+}
+
+.alarm-message {
+    font-weight: 600;
+}
+
+.stop-alarm-button {
+    background-color: var(--color-error);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3);
+}
+
+.stop-alarm-button:hover {
+    background-color: #dc2626;
+    /* 濃い赤 */
+    transform: scale(1.05);
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

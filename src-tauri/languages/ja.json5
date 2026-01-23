@@ -1,0 +1,74 @@
+{
+  "__displayName": "日本語",
+  // ===========================================
+  // CC-推しアラーム for Twitch 日本語言語ファイル
+  // ===========================================
+
+  // アプリ情報
+  "app_title": "CC-推しアラーム for Twitch",
+  "app_description": "Twitch配信アラーム",
+
+  // メイン画面
+  "monitoring_streamers": "監視中の配信者",
+  "streaming": "配信中",
+  "offline": "オフライン",
+  "stop_alarm": "アラーム停止",
+  "settings": "設定",
+  "no_streamers": "監視する配信者が設定されていません",
+
+  // 設定画面
+  "settings_title": "設定",
+  "general_settings": "一般設定",
+  "language": "言語",
+  "theme": "テーマ",
+  "auto_start": "Windows起動時に自動起動",
+  "minimize_to_tray": "閉じる時にトレイへ格納",
+
+  // アラーム設定
+  "alarm_settings": "アラーム設定",
+  "alarm_sound": "アラーム音",
+  "select_file": "選択",
+  "alarm_duration": "アラーム時間（分）",
+  "alarm_mode": "同時配信時の動作",
+  "alarm_all": "全員通知",
+  "alarm_priority_only": "最優先のみ",
+
+  // 監視設定
+  "monitoring_settings": "監視設定",
+  "check_interval": "チェック間隔（秒）",
+  "check_interval_hint": "最小30秒",
+
+  // 配信者設定
+  "streamer_settings": "配信者設定",
+  "add_streamer": "配信者を追加",
+  "show": "表示",
+  "hide": "非表示",
+  "streamer_name": "配信者名",
+  "priority": "優先度",
+  "delete": "削除",
+  "actions": "アクション",
+
+  // API設定
+  "api_settings": "Twitch API設定",
+  "client_id": "Client ID",
+  "client_secret": "Client Secret",
+  "api_hint": "Twitch Developer Console で取得してください",
+
+  // ボタン
+  "save": "保存",
+  "cancel": "キャンセル",
+  "close": "閉じる",
+
+  // メッセージ
+  "loading": "読み込み中...",
+  "settings_saved": "設定を保存しました",
+  "error_save_failed": "設定の保存に失敗しました",
+  "error_api_auth": "Twitch APIの認証に失敗しました。Client ID/Secretを確認してください。",
+  "error_network": "ネットワークエラーが発生しました。再試行します。",
+  "alarm_started": "アラームを開始しました",
+  "alarm_stopped": "アラームを停止しました",
+
+  // トレイメニュー
+  "tray_show": "表示",
+  "tray_quit": "終了"
+}

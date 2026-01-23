@@ -1,0 +1,37 @@
+{
+  // ===================================
+  // CC-OshiAlerm for Twitch ライトテーマ（デフォルト）
+  // ブルーアーカイブ風 爽やか水色
+  // ===================================
+
+  "name": "Light",
+  "displayName": "Light",
+  "colors": {
+    // メインカラー
+    "primary": "#00B8D4",
+    "primaryLight": "#E0F7FA",
+    "primaryDark": "#0097A7",
+
+    // 背景
+    "background": "#F5FBFD",
+    "surface": "#FFFFFF",
+    "surfaceHover": "#F0F9FC",
+
+    // ボーダー
+    "border": "#B2EBF2",
+    "borderLight": "#E0F7FA",
+
+    // テキスト
+    "text": "#1A1A2E",
+    "textSecondary": "#64748B",
+    "textOnPrimary": "#FFFFFF",
+
+    // ステータス
+    "success": "#10B981",
+    "error": "#EF4444",
+    "warning": "#F59E0B",
+
+    // シャドウ
+    "shadow": "rgba(0, 184, 212, 0.1)"
+  }
+}

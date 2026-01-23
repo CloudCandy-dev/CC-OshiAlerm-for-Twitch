@@ -1,0 +1,36 @@
+{
+  // ===================================
+  // CC-OshiAlerm for Twitch ダークテーマ
+  // ===================================
+
+  "name": "Dark",
+  "displayName": "Dark",
+  "colors": {
+    // メインカラー
+    "primary": "#00B8D4",
+    "primaryLight": "#164E63",
+    "primaryDark": "#22D3EE",
+
+    // 背景
+    "background": "#0F172A",
+    "surface": "#1E293B",
+    "surfaceHover": "#334155",
+
+    // ボーダー
+    "border": "#334155",
+    "borderLight": "#475569",
+
+    // テキスト
+    "text": "#F1F5F9",
+    "textSecondary": "#94A3B8",
+    "textOnPrimary": "#FFFFFF",
+
+    // ステータス
+    "success": "#10B981",
+    "error": "#EF4444",
+    "warning": "#F59E0B",
+
+    // シャドウ
+    "shadow": "rgba(0, 0, 0, 0.3)"
+  }
+}
