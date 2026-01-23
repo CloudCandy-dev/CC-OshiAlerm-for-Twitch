@@ -6,9 +6,18 @@ A simple and feature-rich desktop notification app that alerts you with sounds a
 
 - **Real-time Notifications**: Get notified instantly when your favorite streamers go live.
 - **Custom Notification Sounds**: Set any audio file as your notification sound (e.g., your "Oshi's" voice!).
-- **Multi-language Support**: Supports both Japanese and English.
+- **Multi-language Support**: Supports both Japanese and English. More can be added!
 - **Dark Mode Support**: Comes with a sleek dark theme.
 - **Auto-start**: Option to launch automatically when Windows starts.
+
+## How to Use
+
+1. Download the application from [here](https://github.com/CloudCandy-dev/CC-OshiAlerm-for-Twitch/releases/download/1.0.0/CC-OshiAlerm-for-Twitch.zip) and extract it.
+2. Launch `cc-oshialerm-for-twitch.exe`.
+3. Go to Settings (gear icon) and add Twitch streamer names (IDs) you want to follow.
+4. If you want to customize the notification sound, select your preferred audio file.
+5. Set your Client ID and Client Secret. [How to obtain Client ID & Client Secret](https://programming-zero.net/twitch-api-settings/)
+6. Receive an alarm when the broadcast starts.
 
 ## Tech Stack
 
@@ -45,13 +54,6 @@ npm run tauri dev
 ```bash
 npm run tauri build
 ```
-
-## How to Use
-
-1. Launch the application.
-2. Go to Settings (gear icon) and add Twitch streamer names (IDs) you want to follow.
-3. If you want to customize the notification sound, select your preferred audio file.
-4. You will receive notifications when the streamers start their broadcast.
 
 ## License
 
