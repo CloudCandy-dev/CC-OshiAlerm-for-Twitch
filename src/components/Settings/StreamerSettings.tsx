@@ -5,6 +5,7 @@
 import { useState } from 'react';
 import { useConfig, useLanguage } from '../../contexts';
 import { Channel } from '../../types/config';
+import { checkStreamsNow } from '../../services/tauriCommands';
 
 function StreamerSettings() {
     const { config, updateConfig } = useConfig();
@@ -28,6 +29,9 @@ function StreamerSettings() {
 
         updateConfig({
             channels: [...config.channels, newChannel]
+        }).then(() => {
+            // 追加後に即座にチェックを実行
+            checkStreamsNow();
         });
         setNewStreamer('');
     };
