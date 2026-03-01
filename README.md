@@ -1,4 +1,4 @@
-# CC-TwitchAlerm (OshiAlerm for Twitch)
+# CC-OshiAlerm for Twitch
 
 Twitch のお気に入りの配信者が配信を開始した際、デスクトップ通知と音で知らせてくれるシンプルで高機能なデスクトップ通知アプリです。
 
